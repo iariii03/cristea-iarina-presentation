@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Cristea Iarina</title>
+    <meta name="description" content="WebSlides Cheat Sheet. A quick reference guide for beginners. This tutorial contains hundreds of HTML/CSS examples.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description" content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="./static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="./static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="./static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="./static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="./static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="./static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="./static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="./static/images/favicons/favicon-192.png">
+    
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-black-blue aligncenter">
+         <span class="background dark" style="background-image:url('./static/images/mine/eu_marea.jpg')"></span>
+          <!--.wrap = container (width: 90%) with fadein animation -->
+          <div class="wrap">
+            <p class="text-subtitle">Everything you need to know about</p>
+            <h1 class="text-landing">Cristea Iarina</h1>
+            <p class="text-symbols">* * * </p>
+            <p>
+              <a class="button ghost" href="https://www.linkedin.com/in/iarina-gabriela-cristea-369b2017a" title="Download WebSlides">
+                <svg class="fa-linkedin">
+                  <use xlink:href="#fa-linkedin"></use>
+                </svg>
+              </a>
+              <a class="button ghost" href="https://github.com/iariii03" title="Download WebSlides">
+                <svg class="fa-github">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+              </a>
+              <a class="button ghost" href="https://www.strava.com/athletes/73425446" title="Download WebSlides">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="strava" class="svg-inline--fa fa-strava fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M158.4 0L7 292h89.2l62.2-116.1L220.1 292h88.5zm150.2 292l-43.9 88.2-44.6-88.2h-67.6l112.2 220 111.5-220z"></path></svg>
+              </a>
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap ">
+            <!-- <h3><strong>Introduction</strong></h3> -->
+              <div class="content-left">
+                <figure>
+                    <img alt="eu" class="aligncenter size-80" src="./static/images/mine/cafelutza.jpg">
+                  </figure>
+              </div>
+              <!-- .end .column -->
+              <div class="content-left">
+            
+                <pre >
+<span class="code-comment">&lt;!-- Picture with cafelutza --&gt;</span>
+&lt;div class="content-left"&gt;
+       &lt;figure&gt;
+            &lt;img alt="eu" class="aligncenter size-80"
+                src="./static/images/mine/cafelutza.jpg"&gt;
+       &lt;/figure&gt;
+&lt;/div&gt;
+
+<span class="code-comment">//Build Iarina Introduction</span>
+Person me = new Person.PersonBuilder("Cristea", "Iarina")
+               .age(22)
+               .from(CityConstants.MANGALIA)
+               .livesIn(CityConstants.BUCHAREST)
+               .college("The Faculty of Economic Cybernetics,Statistics and Informatics",FINISHED)
+               .master("E-Business",YEAR_I)
+               .work("Application Developer", IBM)
+               .build();              
+<span class="code-comment">//show Iarina</span>
+me.showDetailedPresentation();       
+    </pre>
+    </div>
+    <div class="wrap">
+      <p class="alignright">
+        <a class="button" title="Run" onclick="showError()">
+          <svg class="fa-play">
+            <use xlink:href="#fa-play"></use>
+          </svg>
+          Run
+        </a>
+      </p>
+      <div class="aligncenter"  id="console-log" style="visibility: hidden;">
+        <p class="alignleft" style="margin-left: 2%;">Run:
+          <svg  transform=" rotate(180, 0, 0)" style="color:red">
+            <use xlink:href="#fa-play"></use>
+          </svg>
+          <svg style="color:green">
+            <use xlink:href="#fa-play"></use>
+          </svg>
+          PresentationApp
+        </p>
+        <pre class="consolelog">
+          C:\Users\IarinaCristea\.jdks\openjdk-14.0.2\bin\java.exe 
+
+java.lang.NullPointerException
+	at iarina.presentaton.Person.characteristics(Person.java:45)
+	at iarina.presentaton.showDetailedPresentation(PresentationApp.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+Process finished with exit code -1
+        </pre>
+      </div>
+    </div>
+    <!-- <figure class="alignright size-50">
+        <img alt="eu" class="alignleft size-80" src="./static/images/mine/nullPointer.png">
+      </figure> -->
+        </section>
+
+
+        <section class="aligncenter">
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+              <!-- <p class="text-intro">Basic Grid (auto-fill and equal height).</p> -->
+              <div class="grid sms" >
+                <div class="column" id="details-right" style="visibility: hidden;">
+                  <figure><img class="aligncenter " src="./static/images/mine/yoga.jpg" alt="yoga" ></figure> 
+                    <p class="text-symbols">** Yoga **</p>
+                  <figure><img class="aligncenter" src="./static/images/mine/run.jpg" alt="Run"></figure>
+                  <p class="text-symbols">** Strava App **</p>
+                  <figure><img class="aligncenter" src="./static/images/mine/lebede.jpg" alt="eu"></figure>
+                  <p class="text-symbols">** Me **</p>
+                </div>
+                <!-- end .column -->
+                <div class="column">
+                    <pre>
+<span class="code-comment">//Hobbies</span>                 
+List&lt;Sport&gt; sportsList = new ArrayList&lt;&gt;();
+sports.add(new Sport( "YOGA" ));
+sports.add(new Sport( "Running" ));
+sports.add(new Sport( "Cycling" ));                        
+Characteristics sports = CharacteristicsFactory.getCharacteristics(sportsList);
+
+<span class="code-comment">//Skills and Interests</span> 
+List&lt;Skills&gt; skillList = new ArrayList&lt;&gt;();
+skills.add(new Skill( PERSONAL, "Creativity" ));
+skills.add(new Skill( SOCIAL, "Funny" ));
+skills.add(new Skill( SOCIAL, "Team work" ));
+skills.add(new Skill( PROGRAMMING, "Web Development" ));
+skills.add(new Skill( PROGRAMMING, "Analitical" ));
+skills.add(new Skill( PROGRAMMING, "Data structure" ));
+skills.add(new Skill( INTEREST, "Blockchain" ));                   
+Characteristics skills = CharacteristicsFactory.getCharacteristics(skillList);                       
+<span></span>
+me = new Person.PersonBuilder(me)
+  .characteristics(Arrays.asList( sports, skills ))
+  .animals(new Parrot( "KIWI", Breed.COCKATIEL ))
+  .build();
+                  
+<span class="code-comment">//show Iarina</span>
+me.showDetailedPresentation();          
+         </pre>
+      
+          <p class="alignright">
+            <a class="button" title="Run" onclick="showImg()">
+              <svg class="fa-play">
+                <use xlink:href="#fa-play"></use>
+              </svg>
+              Run
+            </a>
+          </p>
+         
+          <figure id="details-center" style="visibility: hidden;">
+            <img class="aligncenter" src="./static/images/mine/programatoare.jpg" alt="programming">
+          </figure> 
+                </div>
+                <!-- end .column -->
+                <div class="column" id="details-left" style="visibility: hidden;">
+                    <figure><img class="aligncenter" src="./static/images/mine/kiwi.jpg" alt="Kiwi"></figure>
+                    <p class="text-symbols">** Kiwi **</p>
+                    <figure><img class="aligncenter" src="./static/images/mine/toledo.jpg" alt="eu"></figure>
+                    <p class="text-symbols">** Me too **</p>
+                </div>
+                <!-- end .column -->
+              </div>
+              <!-- end .grid -->
+            </div>
+            <!-- end .wrap -->
+          </section>
+
+        <section>
+          <div class="wrap">
+            <div class="content-left">
+                <figure>
+                    <img alt="eu mascata" class="aligncenter size-50 " style="border-radius: 3%;" src="./static/images/mine/masca.jpg">
+                  </figure>
+                </div>
+            <div class="content-right">
+              <blockquote>
+                <p>“Ce-mi trebuie mie franceza, eu ma fac programator!”</p>
+                <p><cite>Cristea Iarina, 2015</cite></p>
+              </blockquote>
+              <br>  </br>
+              <br>  </br>
+              <br>  </br>
+              <blockquote>
+                <p>“Ce-mi trebuie mie franceza, eu sunt programator!”</p>
+                <p><cite>Cristea Iarina, Application Developer at IBM.</cite></p>
+              </blockquote>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+          </section>
+        
+          <section class="bg-black-blue aligncenter">
+            <span class="background dark" style="background-image:url('./static/images/mine/beach.jpg')"></span>
+             <!--.wrap = container (width: 90%) with fadein animation -->
+             <div class="wrap">
+               <p class="text-subtitle">Thank you for getting this far</p>
+               <h1 class="text-landing">The End</h1>
+               <p class="text-symbols">* * * </p>
+               <p>
+                 <a class="button ghost" href="https://www.linkedin.com/in/iarina-gabriela-cristea-369b2017a" title="Download WebSlides">
+                   <svg class="fa-linkedin">
+                     <use xlink:href="#fa-linkedin"></use>
+                   </svg>
+                 </a>
+                 <a class="button ghost" href="https://github.com/iariii03" title="Download WebSlides">
+                   <svg class="fa-github">
+                     <use xlink:href="#fa-github"></use>
+                   </svg>
+                 </a>
+                 <a class="button ghost" href="https://www.strava.com/athletes/73425446" title="Download WebSlides">
+                   <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="strava" class="svg-inline--fa fa-strava fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M158.4 0L7 292h89.2l62.2-116.1L220.1 292h88.5zm150.2 292l-43.9 88.2-44.6-88.2h-67.6l112.2 220 111.5-220z"></path></svg>
+                 </a>
+               </p>
+             </div>
+             <!-- .end .wrap -->
+           </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="./static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./static/js/svg-icons.js"></script>
+    <script>
+     function showError(){
+          var img = document.getElementById('console-log');
+          img.style.visibility = 'visible';
+          }
+
+          function showImg(){
+          var img = document.getElementById('details-right');
+          img.style.visibility = 'visible';
+          var img = document.getElementById('details-left');
+          img.style.visibility = 'visible';
+          var img = document.getElementById('details-center');
+          img.style.visibility = 'visible';
+          }
+    </script>
+
+  </body>
+</html>
