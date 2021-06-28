@@ -111,7 +111,7 @@
               <div class="content-left">
             
                 <pre >
-<span class="code-comment">&lt;!-- Picture with cafelutza --&gt;</span>
+<span class="code-comment">&lt;!-- Picture with Iarina --&gt;</span>
 &lt;div class="content-left"&gt;
        &lt;figure&gt;
             &lt;img alt="eu" class="aligncenter size-80"
@@ -124,9 +124,9 @@ Person me = new Person.PersonBuilder("Cristea", "Iarina")
                .age(22)
                .from(CityConstants.MANGALIA)
                .livesIn(CityConstants.BUCHAREST)
-               .college("The Faculty of Economic Cybernetics,Statistics and Informatics",FINISHED)
-               .master("E-Business",YEAR_I)
-               .work("Application Developer", IBM)
+               .withCollege("The Faculty of Economic Cybernetics,Statistics and Informatics", Status.FINISHED)
+               .withMaster("E-Business", Status.YEAR_II)
+               .withWork("Application Developer", IBM)
                .build();              
 <span class="code-comment">//show Iarina</span>
 me.showDetailedPresentation();       
@@ -198,14 +198,15 @@ skills.add(new Skill( PERSONAL, "Creativity" ));
 skills.add(new Skill( SOCIAL, "Funny" ));
 skills.add(new Skill( SOCIAL, "Team work" ));
 skills.add(new Skill( PROGRAMMING, "Web Development" ));
-skills.add(new Skill( PROGRAMMING, "Analitical" ));
+skills.add(new Skill( PROGRAMMING, "Clean code" ));
 skills.add(new Skill( PROGRAMMING, "Data structure" ));
-skills.add(new Skill( INTEREST, "Blockchain" ));                   
+skills.add(new Skill( INTEREST, "Blockchain" ));     
+skills.add(new Skill( INTEREST, "Cloud" ));             
 Characteristics skills = CharacteristicsFactory.getCharacteristics(skillList);                       
 <span></span>
 me = new Person.PersonBuilder(me)
-  .characteristics(Arrays.asList( sports, skills ))
-  .animals(new Parrot( "KIWI", Breed.COCKATIEL ))
+  .withCharacteristics(Arrays.asList( sports, skills ))
+  .withPet(new Parrot( "KIWI", Breed.COCKATIEL ))
   .build();
                   
 <span class="code-comment">//show Iarina</span>
